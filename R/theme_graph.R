@@ -48,7 +48,7 @@
 #'
 #' ggraph(graph) + geom_edge_link() + geom_node_point() + theme_graph()
 #'
-theme_graph <- function(base_family = 'Arial Narrow', base_size = 11,
+theme_graph <- function(base_family = 'Arial', base_size = 11,
                         background = 'white', foreground = NULL, border = TRUE,
                         text_colour = 'black', bg_text_colour = text_colour,
                         fg_text_colour = text_colour,
@@ -124,7 +124,7 @@ th_foreground <- function(foreground = 'grey80', fg_text_colour = NULL, border =
 #' @param ... Parameters passed on the `theme_graph`
 #'
 #' @export
-set_graph_style <- function(family = 'Arial Narrow', face = 'plain', size = 11,
+set_graph_style <- function(family = 'Arial', face = 'plain', size = 11,
                             text_size = 11, text_colour = 'black', ...) {
     style <- theme_graph(base_family = family, base_size = size,
                          text_colour = text_colour, ...)
